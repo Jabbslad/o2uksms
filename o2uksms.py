@@ -17,6 +17,7 @@ chosen = raw_input('Select a contact no: ')
 number = contacts[int(chosen)]['number']
 
 br = Browser()
+br.set_handle_robots(False)
 
 br.open("https://o2.co.uk/login")
 br.select_form(name='loginForm')
